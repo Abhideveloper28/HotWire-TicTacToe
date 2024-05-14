@@ -14,7 +14,7 @@ class Game < ApplicationRecord
     validates :player1_name, presence: true
     validates :player2_name, presence: true
 
-    after_update_commit {broadcast_update}
+    after_update_commit { broadcast_update }
 
     def [](row,col)
         state[row.to_s][col.to_s]
@@ -46,7 +46,6 @@ class Game < ApplicationRecord
         # Check vertical
         if state.all? { |r, cols| cols[col.to_s] == symbol }
           self.winner = symbol
-          debugger
           self.finished = true
           return
         end
