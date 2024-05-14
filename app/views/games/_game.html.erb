@@ -1,5 +1,5 @@
 <div class="game-board">
-        <% 3.times do |row| %>
+    <% 3.times do |row| %>
         <div class="row">
             <% 3.times do |col| %>
                 <span class="cell">
@@ -12,4 +12,15 @@
             <% end %>
         </div>
     <% end %>
+    <br>
+    <% if game.finished? %> <!-- Checks if the game is finished -->
+      <center>
+        <% if game.winner? %> <!-- Checks if there's a winner -->
+          Game Over 
+        <% else %>
+          It's a draw! 
+          <%= link_to 'Back', root_path %> <!-- Provides a link to go back to the root path -->
+        <% end %>
+      </center>
+    <% end %> <!-- End of the outer if block -->
 </div>

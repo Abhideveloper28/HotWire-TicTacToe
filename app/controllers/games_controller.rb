@@ -10,4 +10,9 @@ class GamesController < ApplicationController
     def create 
         redirect_to Game.create
     end
+
+    private
+    def game_params
+        params.permit(:player1_name, :player2_name)
+    end
 end
