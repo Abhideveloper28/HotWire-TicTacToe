@@ -46,6 +46,7 @@ class Game < ApplicationRecord
         # Check vertical
         if state.all? { |r, cols| cols[col.to_s] == symbol }
           self.winner = symbol
+          debugger
           self.finished = true
           return
         end
