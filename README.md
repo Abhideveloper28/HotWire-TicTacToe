@@ -1,24 +1,40 @@
-# README
+## TicTacToe
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+TicTacToe is a simple web application built with Ruby on Rails 7, allowing users to play the classic Tic Tac Toe game in real-time using Hotwire.
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+Ruby version 3.0.0
+Rails version 7.0.0
 
-* System dependencies
+## Installation
 
-* Configuration
+# Clone the repository:
+git clone <repository-url>
 
-* Database creation
+# Navigate to the project directory:
+cd TicTacToe
 
-* Database initialization
+# Install dependencies:
+bundle install
 
-* How to run the test suite
+# Start the Rails server:
+rails server
 
-* Services (job queues, cache servers, search engines, etc.)
+Open your web browser and navigate to http://localhost:3000.
 
-* Deployment instructions
+Start a new game by entering the players' names and clicking "Start Game".
 
-* ...
+The game will begin, allowing players to take turns placing their symbol (X or O) on the board.
+
+The game will automatically check for a winner after each turn. If a winner is found, the winner's name will be displayed. If the game ends in a draw, it will be indicated accordingly.
+
+Players can end their turn and pass it to the other player by clicking the "End Turn" button.
+
+## Technologies Used
+
+Ruby on Rails 7: Web application framework
+Hotwire: Real-time updates for interactive gameplay
+HTML/CSS: Frontend styling and structure
+JavaScript: Client-side scripting for interactivity
+
