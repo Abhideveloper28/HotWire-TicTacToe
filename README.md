@@ -1,6 +1,6 @@
-## TicTacToe
+## Hotwire-TicTacToe
 
-TicTacToe is a simple web application built with Ruby on Rails 7, allowing users to play the classic Tic Tac Toe game in real-time using Hotwire.
+It is a simple web application built with Ruby on Rails 7, allowing users to play the classic Tic Tac Toe game in real-time using Hotwire.
 
 ## Requirements
 
@@ -13,7 +13,7 @@ Rails version 7.0.0
 git clone <repository-url>
 
 # Navigate to the project directory:
-cd TicTacToe
+cd Hotwire-TicTacToe
 
 # Install dependencies:
 bundle install
@@ -38,3 +38,5 @@ Hotwire: Real-time updates for interactive gameplay
 HTML/CSS: Frontend styling and structure
 JavaScript: Client-side scripting for interactivity
 
+# Screenshot attached below: 
+![alt text](<Screenshot from 2024-05-14 21-23-35.png>)
